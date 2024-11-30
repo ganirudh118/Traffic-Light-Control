@@ -1,5 +1,3 @@
-// Code your testbench here
-// or browse Examples
 module Traffic_light_controller_TB;
   
   reg clk,rst;
@@ -8,13 +6,8 @@ module Traffic_light_controller_TB;
   wire [2:0]light_MT;
   wire [2:0]light_M2;
   
-  //instantiating design module
   Traffic_light_controller dut(.clk(clk), .rst(rst), .light_M1(light_M1), .light_S(light_S), .light_M2(light_M2), .light_MT(light_MT));
-  
-  
-  
-      
-   	
+
   initial
     begin
       clk=1'b0;
